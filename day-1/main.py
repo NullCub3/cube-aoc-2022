@@ -13,4 +13,14 @@ with open('input.txt') as f:
 
 elves.sort(reverse=True)
 
-print(elves[0])
+print(elves)
+
+print("Answer 1:", elves[0])
+
+calc = 0
+range_ = 3
+
+for x in range(range_):
+    calc += elves[x]
+
+print("Answer 2:", calc)
